@@ -17,5 +17,5 @@ class Neuron:
 
     def adjust(self, ins, delta, lr):
         for i in xrange(len(ins)):
-            self.weights[i] += ins[i] * delta * lr
-        self.bias += delta * lr
+            self.weights[i] += ins[i] * lr
+        self.bias += lr
